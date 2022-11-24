@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: shopazone-dev
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: shopazone-dev
+  source:
+    repoURL: 'https://github.com/hahalee001-uniforce/F5_WAAP_myshop.git'
+    path: shopazone-dev
+    targetRevision: HEAD
+  destination:
+    server: 'https://10.8.52.156:6443'
+    namespace: shopazone-dev
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - PruneLast=true
+      - CreateNamespace=true

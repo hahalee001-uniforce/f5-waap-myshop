@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: nginx-sc
-        image: reg.lab.uniforce.com.tw/nginx-plus-ingress/nginx-plus-ingress:2.3.1
+        image: reg.lab.uniforce.com.tw/nginx-plus-ingress/nginxplus:20230325
         ports:
         - containerPort: 9090
         volumeMounts:

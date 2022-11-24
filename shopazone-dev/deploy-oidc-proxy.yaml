@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: oidc-proxy
-        image: <your nginx plus>
+        image: reg.lab.uniforce.com.tw/nginx-plus-ingress/nginx-plus-ingress:2.3.0
         imagePullPolicy: Always
         ports:
         - name: http

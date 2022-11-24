@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: openid-connect-config-conf
+  name: openid-connect-config.conf
 data:
   openid_connect_config.conf: |-
     # OpenID Connect configuration

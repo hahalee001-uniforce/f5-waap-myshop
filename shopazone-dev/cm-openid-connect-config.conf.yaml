@@ -48,7 +48,7 @@ data:
 
     map $host $oidc_hmac_key {
         # This should be unique for every NGINX instance/cluster
-        default "<ryour random made up key>";
+        default "0YGrHLL4AUlL";
     }
 
     map $proto $oidc_cookie_flags {
